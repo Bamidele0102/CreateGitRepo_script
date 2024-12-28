@@ -75,7 +75,7 @@ Repository 'my-new-repo' has been created and pushed to GitHub successfully in t
 
 ## License
 
-This script is licensed under the MIT License.
+This script is licensed under the Apache License.
 
 ---
 
