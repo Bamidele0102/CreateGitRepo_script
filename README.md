@@ -15,26 +15,33 @@ This script automates the creation of a new GitHub repository and links it to a 
 
 - **Git**: Ensure Git is installed and configured on your system.
 - **jq**: The script uses `jq` for JSON processing. Install it using:
+
     ```bash
     sudo apt-get install jq
     ```
+
 - **Personal Access Token (PAT)**: Generate a PAT with at least `repo` scope for repository creation. [GitHub Docs: Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 ## How to Use
 
 1. Save the script as `create-repo.sh`.
 2. Make it executable:
+
      ```bash
      chmod +x create-repo.sh
      ```
+
 3. Run the script, providing the repository name as an argument:
+
      ```bash
      ./create-repo.sh my-new-repo
      ```
+
      If no name is provided, the script will prompt you for one.
 4. Enter your GitHub Personal Access Token when prompted.
 
 The script will:
+
 - Create a directory named `my-new-repo`.
 - Initialize a Git repository.
 - Create a `README.md` file.
@@ -56,9 +63,11 @@ Repository 'my-new-repo' has been created and pushed to GitHub successfully in t
 
 - **Error: 'jq' is not installed.**
     Install `jq` using:
+
     ```bash
     sudo apt-get install jq
     ```
+
 - **Error: Unable to fetch GitHub username.**
     Check that your PAT is valid and has the required `repo` scope.
 - **Error: Directory already exists.**
@@ -71,6 +80,7 @@ This script is licensed under the MIT License.
 ---
 
 ### Instructions to Use:
+
 1. Copy both the script and the `README.md` file into your project directory.
 2. Make the script executable and use it to create new repositories easily.
 3. Optionally, you can include the `LICENSE` file if needed.
